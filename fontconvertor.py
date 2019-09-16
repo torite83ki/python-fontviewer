@@ -165,7 +165,7 @@ class BdfFont(FontData):
         for self.m in range(self.windowHeight):
             for self.n in range(self.windowWidth):
                 self.bitmap_x = self.n - self.xoffset + self.windowXoffset
-                self.bitmap_y = self.m - self.yoffset + self.windowYoffset
+                self.bitmap_y = self.m + self.yoffset - self.windowYoffset + (self.height - self.windowHeight)
                 #print("bitX", self.bitmap_x.__str__(), ", bitY", self.bitmap_y.__str__())
                 if self.bitmap_x >= 0 and self.bitmap_x < self.width:
                     if self.bitmap_y >= 0 and self.bitmap_y < self.height:
