@@ -1,3 +1,3 @@
 # python-fontviewr
-bdf font viewer
-coded by Nobu
+bdf font viewer　& convertor
+coded by Nobu 2019/09/15
